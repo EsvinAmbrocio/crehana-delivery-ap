@@ -4,15 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "bulma": "^1.0.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@testing-library/vue": "^8.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.2.0"
+    "happy-dom": "^14.12.3",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
   }
 }
