@@ -1,7 +1,7 @@
 <template>
     <header>
-      <nav class="navbar has-shadow p-4" role="navigation" aria-label="man navigation">
-        <div class="navbar-menu container">
+      <nav class="navbar has-shadow" role="navigation" aria-label="man navigation">
+        <div class="navbar-menu container p-4 is-fixed-top">
           <div class="navbar-start">
             <div class="navbar-item">
               <h1 class="title">
