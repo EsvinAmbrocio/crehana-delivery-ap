@@ -1,10 +1,11 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import MarketGrid from './page/MarketGrid.vue'
 import BaseLayout from './layouts/BaseLayout.vue'
 </script>
 
 <template>
   <BaseLayout>
+    <market-grid/>
   </BaseLayout>
 </template>
 
