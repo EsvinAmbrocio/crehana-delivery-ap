@@ -1,13 +1,13 @@
 export class ProductEntity {
   /** @property {Number} id */
   id
-  /** @property {String} id */
+  /** @property {String} title */
   title
-  /** @property {Number} id */
+  /** @property {Number} price */
   price
-  /** @property {String} id */
+  /** @property {String} description */
   description
-  /** @property {String} id */
+  /** @property {String} image */
   image
   /**
    * @param {{
@@ -22,7 +22,13 @@ export class ProductEntity {
     this.id = id
     this.title = title
     this.price = price
-    this.description = description
+    this.description = String(description ?? '')
     this.image = image
+  }
+
+  get shortDescription() {
+    let shortDescription = this.description.slice(0, 50)
+    shortDescription += '...'
+    return shortDescription
   }
 }

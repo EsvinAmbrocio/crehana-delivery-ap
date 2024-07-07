@@ -1,15 +1,15 @@
 import {ProductEntity} from '../entities/ProductEntity.js'
 
 export class ProductRepository {
-  /** 
-   * @property {import('../infrastructure/FakeApiClient.js').FakeApiClient} client 
+  /**
+   * @property {import('../infrastructure/FakeApiClient.js').FakeApiClient} client
    */
   client
   /** @param {import('../infrastructure/FakeApiClient.js').FakeApiClient} client */
   constructor(client) {
     this.client = client
   }
-  
+
   /**
    * @return {Promise<import('../entities/ProductEntity.js').ProductEntity[]>}
    */
