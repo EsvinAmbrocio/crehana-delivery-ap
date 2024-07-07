@@ -17,5 +17,5 @@ docker run --rm --interactive --tty -w /app -u node --volume ${PWD}:/app node:20
 Start the server
 
 ```bash
-docker run --rm --interactive --tty -w /app -u node --volume ${PWD}:/app node:20.14-alpine npm run dev
+docker run --rm --interactive --publish 5173:5173 --tty -w /app -u node --volume ${PWD}:/app node:20.14-alpine npm run dev
 ```
