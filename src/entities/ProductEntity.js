@@ -27,6 +27,9 @@ export class ProductEntity {
   }
 
   get shortDescription() {
+    if(this.description.length <= 50){
+      return this.description
+    }
     let shortDescription = this.description.slice(0, 50)
     shortDescription += '...'
     return shortDescription

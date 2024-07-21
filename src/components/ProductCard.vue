@@ -28,6 +28,9 @@ import { ProductEntity } from "../entities/ProductEntity";
 
 
 const props = defineProps({
-  product: ProductEntity
+  product: {
+    type: ProductEntity,
+    required: true
+  }
 })
 </script>
